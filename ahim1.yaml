@@ -1,0 +1,14 @@
+proxies:
+- name: Trojan GO test
+  server: 141.193.213.20
+  port: 443
+  type: trojan
+  password: jagoanssh-ahim1
+  skip-cert-verify: true
+  sni: sg1go.ipservers.xyz
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: sg1go.ipservers.xyz
+  udp: true
